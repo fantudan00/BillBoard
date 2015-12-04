@@ -1,31 +1,272 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>测试</title>
-<style type="text/css">
-<!--
-body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
-fieldset{padding:0 15px 10px 15px;} 
-h1{font-size:4.4em;margin:0;color:#FFF;}
-h2{font-size:2.7em;margin:0;color:#CC0000;}
-h3{font-size:2.2em;margin:10px 0 0 0;color:#000000;}
-#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
-background-color:#555555;}
-#content{margin:0 0 0 2%;position:relative;}
-.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
--->
-</style>
-</head>
-<body>
-<div id="header"><h1>安装</h1></div>
-<div id="content">
- <div class="content-container"><fieldset>
-  <h2>不要404了</h2>
-  <h3>悲剧的404</h3>
- </fieldset></div>
-</div>
 
-<a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/fantudan00/BillBoard/master/yijiuyishi.plist">下载ipa</a>
-</body>
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+                <title>Mob 手游录像旗舰产品 ShareREC 近日上线</title>
+                <meta name="description" content="广东互联网大会 Mob 开放日--移动开发者服务专场上，Mob 联合创始人兼 CMO 兰旭为大家演示了 ShareREC 手游录像分享工具 Demo：Mob 旗舰产品 ShareREC 手游录像解决方案正式上线" />
+                <style type="text/css">
+                    body {
+                        font-family: 'Microsoft Yahei', 微软雅黑, Tahoma, Helvetica, Arial, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+                .header {
+                    width: 100%;
+                    margin-bottom: 0;
+                    background-color: #538FD0;
+                    box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 10px 0px;
+                }
+                .header-main {
+                    max-width: 960px;
+                    margin: 0 auto;
+                }
+                
+                a.share-site, a.share-link {
+                    color: #FFF;
+                    font-size: 1em;
+                    text-decoration: none;
+                    width: auto;
+                }
+                
+                .share-button, .share-site, .share-link {
+                    width: 7em;
+                    display: inline-block;
+                    margin-right: 2em;
+                    color: #E7F1FD;
+                    background-color: #538FD0;
+                    height: 3em;
+                    line-height: 3em;
+                    font-size: 0.8em;
+                    border: none;
+                    cursor: pointer;
+                    text-align: left;
+                    padding-left: 20px;
+                    text-decoration: none;
+                }
+                
+                .share-button:hover, .share-link:hover {
+                    color: #fff;
+                }
+                
+                .share-content {
+                    max-width: 920px;
+                    margin: 1em auto;
+                    padding: 0 20px;
+                }
+                </style>
+    </head>
+    <body>
+        <!--MOB SHARE BEGIN-->
+        <div class="-mob-share-ui-button -mob-share-open">分享</div>
+        <div class="-mob-share-ui -mob-share-ui-theme -mob-share-ui-theme-slide-bottom" style="display: none">
+            <ul class="-mob-share-list">
+                <li class="-mob-share-weibo"><p>新浪微博</p></li>
+                <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+                <li class="-mob-share-qzone"><p>QQ空间</p></li>
+                <li class="-mob-share-qq"><p>QQ好友</p></li>
+                <li class="-mob-share-weixin"><p>微信</p></li>
+                
+            </ul>
+            <div class="-mob-share-close">取消</div>
+        </div>
+        <div class="-mob-share-ui-bg"></div>
+        <script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=5bda9710bb57"></script>
+        
+         <!--MOB SHARE END-->
+        <!--
+        <div class="header">
+            <div class="header-main">
+                <a class="share-site" href="">MOB ShareSDK</a>
+                <a class="share-link" href="http://wiki.mob.com/sharesdk-for-web快速集成/" target="_blank">开发文档</a>
+                <button class="share-button" data-theme="scatter">默认效果</button>
+                <button class="share-button" data-theme="slide-top">上边滑出</button>
+                <button class="share-button" data-theme="slide-bottom">下边滑出</button>
+                <button class="share-button" data-theme="slide-left">左边滑出</button>
+                <button class="share-button" data-theme="slide-right">右边滑出</button>
+            </div>
+        </div>
+        <div class="share-content">
+            
+      
+            <div class="-mob-share-ui -mob-share-ui-theme" style="display: none">
+                <ul class="-mob-share-list">
+                    <li class="-mob-share-weibo"><p>新浪微博</p></li>
+                    <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+                    <li class="-mob-share-qzone"><p>QQ空间</p></li>
+                    <li class="-mob-share-qq"><p>QQ好友</p></li>
+                    <li class="-mob-share-weixin"><p>微信</p></li>
+                    <li class="-mob-share-douban"><p>豆瓣</p></li>
+                    <li class="-mob-share-renren"><p>人人网</p></li>
+                    <li class="-mob-share-kaixin"><p>开心网</p></li>
+                    <li class="-mob-share-facebook"><p>Facebook</p></li>
+                    <li class="-mob-share-twitter"><p>Twitter</p></li>
+                    <li class="-mob-share-pocket"><p>Pocket</p></li>
+                    <li class="-mob-share-google"><p>Google+</p></li>
+                    <li class="-mob-share-youdao"><p>有道云笔记</p></li>
+                    <li class="-mob-share-mingdao"><p>明道</p></li>
+                    <li class="-mob-share-pengyou"><p>朋友网</p></li>
+                    <li class="-mob-share-tumblr"><p>Tumblr</p></li>
+                    <li class="-mob-share-instapaper"><p>Instapaper</p></li>
+                    <li class="-mob-share-linkedin"><p>LinkedIn</p></li>
+                </ul>
+                <div class="-mob-share-close">取消</div>
+            </div>
+            
+            <div class="-mob-share-ui-bg"></div>
+            
+            <script>
+                // 同一网页下只能有一种分享效果，否则会冲突
+                // 所以这里把ui节点先复制起来，点其中一个效果时将之前的删除
+                
+                var ui = getElementsByClassName( "-mob-share-ui" )[0];
+                var uiTemplate = ui.cloneNode( true );
+                var uiCurrent = ui;
+                
+                var buttons = getElementsByClassName( "share-button" );
+                for( var i = 0, len = buttons.length; i < len; i++ ) {
+                    var btn = buttons[ i ];
+                    btn.onclick = function() {
+                        if( uiCurrent ) {
+                            uiCurrent.parentNode.removeChild( uiCurrent );
+                        }
+                        uiCurrent = uiTemplate.cloneNode( true );
+                        var dataTheme = this.getAttribute( "data-theme" );
+                        var theme = "-mob-share-ui-theme-" + this.getAttribute( "data-theme" );
+                        addClass( uiCurrent, theme );
+                        if( dataTheme === "slide-left" || dataTheme === "slide-right" ) {
+                            getElementsByClassName( "-mob-share-close", uiCurrent )[0].style.display = "none";
+                        }
+                        document.body.appendChild( uiCurrent );
+                        mobShare.ui.init();
+                        mobShare.ui.open();
+                    };
+                }
+            
+            function getElementsByClassName( classname, main ) {
+                var main = main || document;
+                if( main.getElementsByClassName ) {
+                    return main.getElementsByClassName( classname );
+                }
+                var a = [];
+                var re = new RegExp( '(^| )' + classname + '( |$)' );
+                var els = main.getElementsByTagName( "*" );
+                for( var i = 0, j = els.length; i < j; i++ ) {
+                    if( re.test( els[i].className ) ) {
+                        a.push( els[i] );
+                    }
+                }
+                return a;
+            };
+            
+            function hasClass( ele, cls ) {
+                return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+            }
+            
+            function addClass( ele, cls ) {
+                if (!hasClass(ele, cls)) {
+                    ele.className += " " + cls;
+                }
+            }
+            </script>
+            
+            <script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=5bda9710bb57"></script>
+            MOB SHARE END-->
+            
+            <!--正文区域-->
+            <style type="text/css">
+                .article-header { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(102, 102, 102); position: relative; font-size: 14px; line-height: 14px; white-space: normal; background-color: rgb(255, 255, 255); }
+                .article-header .title { margin: 25px 0px 5px 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-weight: normal; font-size: 24px; line-height: 36px; color: rgb(51, 51, 51); }
+                #author { margin: 0px 5px 0px 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(51, 102, 204); position: relative; cursor: pointer; font-weight: bold; }
+                #author .author { margin: 0px 5px 0px 0px; padding: 0px; border: 0px; outline: none; vertical-align: baseline; text-decoration: none; color: rgb(51, 102, 204); position: relative; cursor: pointer; }
+                #article-content { margin: 8px 0px; padding: 0px 0px 8px; border-width: 0px 0px 1px; border-bottom-style: dotted; border-bottom-color: rgb(153, 153, 153); outline: 0px; vertical-align: baseline; font-size: 14px; line-height: 14px; white-space: normal; background-color: rgb(255, 255, 255); }
+                #article-content p { margin-top: 0px; margin-bottom: 0px; padding: 5px 0px 15px; border: 0px; outline: 0px; vertical-align: baseline; line-height: 24px; color: rgb(51, 51, 51); text-align: center; }
+                #article-content strong, #article-content br { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; }
+                #article-content img { margin: 0px auto; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; max-width: 100%; display: block; }
+                
+                .article-share { display: inline-block; }
+                .article-share-list { display: inline-block; margin: 0; padding: 0; position: relative; top: 1px; }
+                .article-share-list li { display: inline-block; }
+                .article-share-list li img { width: 1.5em; margin-right: 0.3em; vertical-align: bottom; }
+                .article-share-text { display: inline-block; margin-left: 25px; color: #444; }
+                .extra { margin-top: 12px; }
+                
+                @media screen and (max-width: 760px) {
+                    .article-share { display: block; margin-top: 1em; }
+                    .article-share-text { margin-left: 0px; }
+                }
+            </style>
+            <header class="article-header">
+                <h1 class="title">
+                    Mob 手游录像旗舰产品 ShareREC 近日上线
+                </h1>
+                <div class="extra">
+                    <span class="author" id="author"><a href="#" class="author">Mob</a>&nbsp;</span>发布于2015-02-02
+                </div>
+            </header>
+            <p>
+            <section id="article-content">
+                <p>
+                <img src="img/1.jpg" title="1.jpg"/>
+                </p>
+                <p>
+                2014 年 11 月 22 日，广东互联网大会 Mob 开放日--移动开发者服务专场上，Mob 联合创始人兼 CMO 兰旭为大家演示了 ShareREC 手游录像分享工具 Demo：Mob 旗舰产品 ShareREC 手游录像解决方案正式上线。<br />
+                </p>
+                <p>
+                Mob 以 ShareSDK 社会化分享为起点，推出集手游录制、分享、推广、手游视频社区、统计五大功能的手游录像解决方案 ShareREC。该产品可提供一键高清录播功能，开始／结束按钮 UI 界面完全自定义，跟游戏原生融合，除兼容目前移动平台的主流游戏引擎，还支持快速社交分享等特性。国外已有两大成熟的产品 Everyplay 和 Kamcord, 在做移动游戏录制及分享，目前国内仍处于起步阶段。
+                </p>
+                <p>
+                <img src="img/2.jpg" title="2.jpg"/>
+                </p>
+                <p>
+                <strong>双平台多引擎支持</strong>
+                </p>
+                <p>
+                Mob 此次正式上线的 ShareREC 完美手游录像解决方案，手游开发者只需 3 分钟快速集成，即可让游戏拥有强大的录制分享功能，同时后台还能提供完善的数据统计，可供实时了解播放量、分享量、下载量等数据。
+                </p>
+                <p>
+                ShareREC 已完美支持 iOS 和 Android 两大主流平台，还特别针对目前业内使用范围最广的 Unity 3D 和 Cocos-2D 两个游戏引擎进行了优化，使之能够更好地应用到基于这两个游戏引擎制作的游戏作品中。
+                <p>
+                <strong>支持自定义</strong><br />
+                </p>
+                <p>
+                在已经内置 ShareREC 的手游产品中，玩家只需简单操作便可在游戏内进行视频录制操作。录制（开始／结束）按钮 UI 界面游戏开发商可以自己定义，与游戏原生融合，录制完成后还可以截取任意节点进行编辑。最重要的是，所有录制的视频均无 ShareREC 使用标识，即 ShareREC 不会在录制的视频内打上自家 LOGO。
+                </p>
+                <p>
+                <img src="img/3.jpg" title="3.jpg"/>
+                </p>
+                <p>
+                <strong>&nbsp;社交化运营</strong>
+                </p>
+                <p>
+                相较于国外视频录制分享工具，ShareREC 更针对国内游戏玩家的社交习惯，将主流社交平台如微博、微信分享的体验做到极致。ShareREC 完全与 ShareSDK 结合，经过两年深厚的技术积累，将社交化运营的经验运用在视频传播上，这也是 Mob 将来为开发者服务的重点。ShareREC 所带来的视频内容制作、分享以及互动等一系列行为，将为更多游戏开发商带来崭新的运营思路，激发出更大价值。
+                </p>
+                <p>
+                <img src="img/4.jpg" title="4.jpg"/>
+                </p>
+                <p>
+                <strong>数据统计支撑运营</strong>
+                </p>
+                <p>
+                Mob 拥有独特的社会化数据统计，其产品 ShareSDK，专为 App 提供社会化分享服务，支持分享至国内外 40 多家主流社交平台，包括微信、微博、QQ 空间、来往、易信、Facebook、Twitter 等等，可实现第三方登录、社交分享、评论及点赞等功能。根据 ShareSDK 公布的数据，每天的分享量已经超过了 2000 万，App 每天通过 ShareSDK 分享获得的新用户平均超过 10000。
+                </p>
+                <p>
+                &nbsp;ShareREC 则根据游戏开发商的需求量身打造，提供强大的管理后台，可以实时查看视频传播效应的数据，包括游戏视频数量，播放量，下载量等等，为日常运营提供有力地参考。据测算，通过视频去下载游戏的转化率可以提高 20% 以上。
+                </p>
+                <p>
+                <strong>构建手游视频社区</strong><br />
+                </p>
+                <p>
+                ShareREC 手游录像解决方案为游戏构建出一个属于他们自己的视频社区，在这里玩家着眼于互动，可直接发布、关注、下载、点评游戏，和好友直接互动交流；游戏 CP 可在社区提供游戏展示，吸引玩家；基于手游推广成本越来越高，获取高质量用户的困难增大，ShareREC 杜绝将产品构建成一个简单的广告平台，而是通过手游录制、编辑、分享、社区整套服务的方式，挖掘游戏本身玩家的巨大推广潜力，在游戏内部构建一个强大的推广渠道。
+                </p>
+            </section>
+            </p>
+        </div>
+        <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/fantudan00/BillBoard/master/yijiuyishi.plist">下载ipa</a>
+    </body>
 </html>
+
+
+
+
